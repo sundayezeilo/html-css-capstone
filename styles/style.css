@@ -5,20 +5,25 @@
 
 @font-face {
   font-family: "Gotham Lounded Light";
-  src: url("fonts/Gotham-rounded-light.otf");
+  src: url("../fonts/Gotham-rounded-light.otf");
 }
 
 @font-face {
   font-family: "Helvetica Neue Bold";
-  src: url("Helvetica-neue-bold.ttf");
+  src: url("../fonts/Helvetica-neue-bold.ttf");
 }
 
 @font-face {
   font-family: "Helvetica Neue Light";
-  src: url("HelveticaNeue-Light.otf");
+  src: url("../fonts/HelveticaNeue-Light.otf");
 }
 
 @font-face {
   font-family: "Helvetica Neue 65 Medium";
-  src: url("HelveticaNeue-Medium.otf");
+  src: url("../fonts/HelveticaNeue-Medium.otf");
+}
+
+.navbar-brand .company-logo {
+  width: 90px;
+  height: auto;
 }
