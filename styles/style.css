@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gotham Lounded Light";
+  src: url("fonts/Gotham-rounded-light.otf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("Helvetica-neue-bold.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url("HelveticaNeue-Light.otf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue 65 Medium";
+  src: url("HelveticaNeue-Medium.otf");
+}
