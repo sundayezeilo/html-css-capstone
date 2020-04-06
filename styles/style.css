@@ -24,6 +24,15 @@
 }
 
 .navbar-brand .company-logo {
-  width: 90px;
-  height: auto;
+  width: 56px;
+  height: 3vw;
+}
+
+.nav-link .fa-home {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.active .nav-link {
+  color: #d35266 !important;
 }
