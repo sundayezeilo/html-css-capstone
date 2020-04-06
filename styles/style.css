@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Gotham Bold";
   src: url("../fonts/Gotham-Bold.otf");
@@ -23,9 +29,20 @@
   src: url("../fonts/HelveticaNeue-Medium.otf");
 }
 
+.navbar {
+  background-color: #383838 !important;
+}
+
 .navbar-brand .company-logo {
-  width: 56px;
-  height: 3vw;
+  width: 65px;
+  height: 3rem;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-size: 16px;
 }
 
 .nav-link .fa-home {
