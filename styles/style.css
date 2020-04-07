@@ -39,7 +39,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background-color: #ddd;
-  font: 12px/16px "Helvetica Neue light";
+  font: 12px/16px "Helvetica Neue light", sans-serif;
 }
 
 h3 {
@@ -105,7 +105,7 @@ nav .company-logo {
 .nav-bar .nav-link {
   text-decoration: none;
   color: #fff;
-  font: 12px/12px "Helvetica Neue Bold";
+  font: 12px/12px "Helvetica Neue Bold", sans-serif;
 }
 
 .active .nav-link {
@@ -143,8 +143,7 @@ nav .company-logo {
 }
 
 .ads-section {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 10px 20px 0 20px;
   background-color: #fff;
 }
 
@@ -152,6 +151,7 @@ nav .company-logo {
   padding-top: 20px;
   max-width: 65%;
   margin: 0 auto;
+  background-color: whitesmoke;
   display: none;
 }
 
@@ -178,6 +178,7 @@ nav .company-logo {
 }
 
 .hot-ads-body {
+  cursor: pointer;
   margin: auto 5px auto 20px;
   font-family: "Helvetica Neue Light", sans-serif;
 }
@@ -193,6 +194,10 @@ nav .company-logo {
   font-family: "Helvetica Neue Bold", sans-serif;
 }
 
+.hot-ads-body h4 {
+  font-family: "Helvetica Neue Bold", sans-serif;
+}
+
 @media only screen and (min-width: 768px) {
   .ads-block {
     display: block;
@@ -200,11 +205,14 @@ nav .company-logo {
 }
 
 /* PRODUCT SECTION */
-
-.store-section {
+.demo-boards,
+.rf-modules,
+.mcus,
+.components {
   display: grid;
   grid-gap: 20px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  padding-bottom: 0;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, auto);
 }
@@ -212,6 +220,13 @@ nav .company-logo {
 .shopping-list {
   padding: 20px;
   background-color: #fff;
+}
+
+.shop-category-title {
+  color: #d35266;
+  margin: 20px 20px 0 20px;
+  padding-bottom: 0;
+  font-family: "Heveltica Neue Bold", sans-serif;
 }
 
 .stock-img {
@@ -223,14 +238,18 @@ nav .company-logo {
 .fa-plus-square {
   font-size: 24px;
   line-height: 24px;
-  color: #d3d3d3;
   cursor: pointer;
+  color: #888;
+}
+
+.fa-plus-square:hover {
+  color: #ccc;
 }
 
 .item-condition {
   color: #d35266;
   margin-top: 6px;
-  font: 12px/14px "Helvetica Neue Bold";
+  font: 12px/14px "Helvetica Neue Bold", sans-serif;
 }
 
 .cart-title {
@@ -242,10 +261,10 @@ nav .company-logo {
 }
 
 .cart-title,
-.cart-title a {
+h5.cart-title a {
   margin-top: 12px;
   color: #000;
-  font-family: "Helvetica Neue Light";
+  font-family: "Helvetica Neue Light", sans-serif;
 }
 
 .cart-title a:hover {
@@ -268,7 +287,10 @@ nav .company-logo {
 /* END OF MOBILE VERSION */
 
 @media only screen and (min-width: 768px) {
-  .store-section {
+  .demo-boards,
+  .rf-modules,
+  .mcus,
+  .components {
     grid-template-columns: repeat(4, auto);
   }
 }
