@@ -37,6 +37,7 @@ html {
 body {
   color: #000;
   min-width: 320px;
+  overflow-x: hidden;
   background-color: #ddd;
   font: 12px/16px "Helvetica Neue light";
 }
@@ -136,18 +137,69 @@ nav .company-logo {
 
 /* ADS SECTION */
 
-.add-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.page {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.ads-section {
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: #fff;
 }
 
-.add-section .section-title {
-
+.ads-block {
+  padding-top: 20px;
+  max-width: 65%;
+  margin: 0 auto;
+  display: none;
 }
 
-/* CART SECTION */
+.ads-block:hover {
+  background-color: #d3d3d3;
+}
+
+.section-title {
+  padding-left: 20px;
+  font: 16px/18px "Gotham Bold", sans-serif;
+}
+
+.hot-ads {
+  padding: 5px 5px 20px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hot-ads-body h3,
+.hot-ads-body h4,
+.hot-ads-body h5 {
+  margin-bottom: 8px;
+}
+
+.hot-ads-body {
+  margin: auto 5px auto 20px;
+  font-family: "Helvetica Neue Light", sans-serif;
+}
+
+.hot-ads-body p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.hot-ads-body h3 a {
+  color: #d35266;
+  font-family: "Helvetica Neue Bold", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .ads-block {
+    display: block;
+  }
+}
+
+/* PRODUCT SECTION */
 
 .store-section {
   display: grid;
@@ -169,8 +221,10 @@ nav .company-logo {
 }
 
 .fa-plus-square {
-  font: 24px;
+  font-size: 24px;
   line-height: 24px;
+  color: #d3d3d3;
+  cursor: pointer;
 }
 
 .item-condition {
