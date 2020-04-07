@@ -353,15 +353,13 @@ footer {
 
 .footer-wrap {
   max-width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px;
   display: flex;
   align-items: flex-start;
   padding: 15px 30px 20px 0;
   background-color: #fff;
   justify-content: space-around;
   border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
 }
 
 .footer-item {
