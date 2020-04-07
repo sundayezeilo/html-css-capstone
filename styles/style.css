@@ -39,7 +39,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background-color: #ddd;
-  font: 12px/16px "Helvetica Neue light", sans-serif;
+  font: 12px/16px "Helvetica Neue light", Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -73,6 +73,8 @@ nav {
   height: 70px;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
   background-color: #383838;
 }
 
@@ -105,7 +107,7 @@ nav .company-logo {
 .nav-bar .nav-link {
   text-decoration: none;
   color: #fff;
-  font: 12px/12px "Helvetica Neue Bold", sans-serif;
+  font: 10px/12px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
 .active .nav-link {
@@ -122,17 +124,53 @@ nav .company-logo {
 .nav-item .fa-home,
 .nav-item .material-icons,
 .bj-icon--collection {
-  font-size: 18px;
-  line-height: 20px;
-  margin-right: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 2px;
 }
 
 .nav-item .ads-link {
   display: inline-block;
   padding: 0 6px;
-  line-height: 24px;
+  line-height: 20px;
   margin-right: 4px;
   background-color: #d35266;
+}
+
+@media only screen and (min-width: 576px) {
+  .nav-bar .nav-link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .nav-item .fa-home,
+  .nav-item .material-icons,
+  .bj-icon--collection {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .nav-item .ads-link {
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-bar .nav-link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .nav-item .fa-home,
+  .nav-item .material-icons,
+  .bj-icon--collection {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .nav-item .ads-link {
+    line-height: 26px;
+  }
 }
 
 /* ADS SECTION */
@@ -161,7 +199,7 @@ nav .company-logo {
 
 .section-title {
   padding-left: 20px;
-  font: 16px/18px "Gotham Bold", sans-serif;
+  font: 16px/18px "Gotham Bold", Helvetica, Arial, sans-serif;
 }
 
 .hot-ads {
@@ -180,7 +218,7 @@ nav .company-logo {
 .hot-ads-body {
   cursor: pointer;
   margin: auto 5px auto 20px;
-  font-family: "Helvetica Neue Light", sans-serif;
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .hot-ads-body p {
@@ -191,11 +229,26 @@ nav .company-logo {
 
 .hot-ads-body h3 a {
   color: #d35266;
-  font-family: "Helvetica Neue Bold", sans-serif;
+  font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
 .hot-ads-body h4 {
-  font-family: "Helvetica Neue Bold", sans-serif;
+  font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+
+.hot-ads-price {
+  display: table-cell;
+  font-size: 14px;
+  line-height: 26px;
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #d35266;
+  border: 1px solid #d35266;
+  border-radius: 4px;
+  font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -226,7 +279,9 @@ nav .company-logo {
   color: #d35266;
   margin: 20px 20px 0 20px;
   padding-bottom: 0;
-  font-family: "Heveltica Neue Bold", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #d35266;
+  font-family: "Heveltica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
 .stock-img {
@@ -249,22 +304,18 @@ nav .company-logo {
 .item-condition {
   color: #d35266;
   margin-top: 6px;
-  font: 12px/14px "Helvetica Neue Bold", sans-serif;
+  font: 14px/14px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
-.cart-title {
+h5.cart-title a {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
-}
-
-.cart-title,
-h5.cart-title a {
   margin-top: 12px;
   color: #000;
-  font-family: "Helvetica Neue Light", sans-serif;
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .cart-title a:hover {
