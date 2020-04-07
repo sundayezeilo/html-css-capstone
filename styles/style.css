@@ -31,13 +31,41 @@
 
 html {
   max-width: 100%;
+  font-size: 62.5%; /* Only for convenient using of rem similar to px (1.6rem = 16px) */
 }
 
 body {
+  color: #000;
   min-width: 320px;
-  background-color: #fff;
+  background-color: #ddd;
   font: 12px/16px "Helvetica Neue light";
 }
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #383838;
+}
+
+/* NAV SECTION */
 
 nav {
   width: 100%;
@@ -76,7 +104,7 @@ nav .company-logo {
 .nav-bar .nav-link {
   text-decoration: none;
   color: #fff;
-  font: 14px/14px "Helvetica Neue Bold";
+  font: 12px/12px "Helvetica Neue Bold";
 }
 
 .active .nav-link {
@@ -96,4 +124,89 @@ nav .company-logo {
   font-size: 18px;
   line-height: 20px;
   margin-right: 4px;
+}
+
+.nav-item .ads-link {
+  display: inline-block;
+  padding: 0 6px;
+  line-height: 24px;
+  margin-right: 4px;
+  background-color: #d35266;
+}
+
+/* ADS SECTION */
+
+.add-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.add-section .section-title {
+
+}
+
+/* CART SECTION */
+
+.store-section {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+}
+
+.shopping-list {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.stock-img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.fa-plus-square {
+  font: 24px;
+  line-height: 24px;
+}
+
+.item-condition {
+  color: #d35266;
+  margin-top: 6px;
+  font: 12px/14px "Helvetica Neue Bold";
+}
+
+.cart-title,
+.cart-title a {
+  margin-top: 12px;
+  color: #000;
+  font-family: "Helvetica Neue Light";
+}
+
+.cart-title a:hover {
+  color: #d35266;
+  text-decoration: underline;
+}
+
+.cart-checkout {
+  display: flex;
+  margin-top: 3px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.stock-price {
+  color: #d35266;
+  font-family: "Helvetica Neue Bold";
+}
+
+/* END OF MOBILE VERSION */
+
+@media only screen and (min-width: 768px) {
+  .store-section {
+    grid-template-columns: repeat(4, auto);
+  }
 }
