@@ -179,6 +179,14 @@ nav .company-logo {
   font: 12px/14px "Helvetica Neue Bold";
 }
 
+.cart-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 .cart-title,
 .cart-title a {
   margin-top: 12px;
