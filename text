@@ -1,0 +1,116 @@
+
+  <div class="selection-menu">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <span>All Categories</span> 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">MCU Boards</a>
+        <a href="#">RF Modules</a>
+        <a href="#">Components</a>
+        <a href="#">PCB</a>
+      </div>
+    </div> 
+    <div class="what-to-search">
+      Search What?
+    </div>
+    <div class="search-wrap">
+      <input type="text" class="searchbar" placeholder="search">
+      <a href="#"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+
+
+.selection-menu {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 1px solid #888;
+  margin: 0 auto;
+}
+
+.selection-menu > div {
+  height: 100%;
+  border: 1px solid #888;
+}
+
+.selection-menu a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #333;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+.selection-menu a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.searchbar {
+  width: 95px;
+}
+
+.what-to-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.fa-search {
+  font-size: 18px;
+  line-height: 20px;
+  color: #888;
+}
+

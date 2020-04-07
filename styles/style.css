@@ -29,6 +29,10 @@
   src: url("../fonts/HelveticaNeue-Medium.otf");
 }
 
+html {
+  max-width: 100%;
+}
+
 body {
   min-width: 320px;
   background-color: #fff;
@@ -72,7 +76,7 @@ nav .company-logo {
 .nav-bar .nav-link {
   text-decoration: none;
   color: #fff;
-  font: 10px/12px "Helvetica Neue Light";
+  font: 14px/14px "Helvetica Neue Bold";
 }
 
 .active .nav-link {
@@ -92,65 +96,4 @@ nav .company-logo {
   font-size: 18px;
   line-height: 20px;
   margin-right: 4px;
-}
-
-.selection-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  background-color: red;
-}
-
-.selection-menu a {
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  /* padding: 14px 16px; */
-  text-decoration: none;
-}
-
-.dropdown {
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.selection-menu a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
