@@ -351,6 +351,7 @@ footer {
   padding-bottom: 20px;
 }
 
+.legal,
 .footer-wrap {
   max-width: 100%;
   margin: 0 20px;
@@ -359,7 +360,7 @@ footer {
   padding: 15px 30px 20px 0;
   background-color: #fff;
   justify-content: space-around;
-  border-top: 2px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 .footer-item {
@@ -378,6 +379,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footer-right-content {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .footer-link,
@@ -392,6 +400,10 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 2px solid #d35266;
+}
+
+.legal-text {
+  padding: 10px 20px;
 }
 
 .ghost-title {
