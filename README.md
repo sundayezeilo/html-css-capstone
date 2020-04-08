@@ -4,8 +4,8 @@ HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 > This is my HTML & CSS Capstone Project. I created an online shop for electronics. I managed to submit the project some seconds to the deadline, though I'm yet to fix a few bugs.
 
-![screenshot](images/homepage.png)
-![screenshot](images/search-result-page.png)
+![screenshot](images/homepage.jpg)
+![screenshot](images/search-result-page.jpg)
 
 ## Features
 
