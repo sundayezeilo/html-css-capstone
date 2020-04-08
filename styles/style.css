@@ -210,8 +210,9 @@ nav .company-logo {
 
 .lower-nav input {
   height: 40px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 6px;
   font: 16px/18px "Helvetica Neue light", Helvetica, Arial, sans-serif;
 }
 
