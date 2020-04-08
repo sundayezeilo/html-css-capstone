@@ -211,7 +211,6 @@ nav .company-logo {
 .lower-nav input {
   height: 40px;
   padding-left: 4px;
-  padding-right: 4px;
   border-radius: 6px;
   font: 16px/18px "Helvetica Neue light", Helvetica, Arial, sans-serif;
 }
@@ -418,8 +417,9 @@ footer {
   align-items: flex-start;
   padding: 15px 30px 20px 0;
   background-color: #fff;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid #ddd;
+  flex-wrap: wrap;
 }
 
 .footer-item {
@@ -443,7 +443,7 @@ footer {
   padding-left: 10px;
 }
 
-.footer-right-content {
+.footer-content {
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -464,6 +464,36 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 2px solid #d35266;
+}
+
+.footer-wrap label {
+  color: #d35266;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer-wrap form {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.footer-wrap input {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.footer-wrap .lang-contry-currency {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legal {
+  display: block;
+  text-align: center;
 }
 
 .legal-text {
