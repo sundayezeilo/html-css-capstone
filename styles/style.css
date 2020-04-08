@@ -500,6 +500,10 @@ footer {
   padding: 10px 20px;
 }
 
+.legal .legal-text a {
+  color: #000;
+}
+
 .ghost-title {
   display: none;
 }
