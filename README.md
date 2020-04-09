@@ -4,8 +4,8 @@ HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 > This is my HTML & CSS Capstone Project. I created an online shop for electronics. I managed to submit the project some seconds to the deadline, though I'm yet to fix a few bugs.
 
-![screenshot](images/homepage.jpg)
-![screenshot](images/search-result-page.jpg)
+![screenshot](images/home-page.png)
+![screenshot](images/search-result.png)
 
 ## Features
 
@@ -21,7 +21,7 @@ HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 ## Live Demo
 
-[Zeilotech Integrated Systems](https://raw.githack.com/ezeilo-su/html-css-capstone/search-result-page/index.html)
+[Zeilotech Electronics Online Store](https://raw.githack.com/ezeilo-su/html-css-capstone/add-header/index.html)
 
 ## Author
 
