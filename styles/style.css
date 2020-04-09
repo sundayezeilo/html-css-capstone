@@ -110,6 +110,7 @@ nav .company-logo {
 }
 
 .nav-bar .nav-link {
+  padding: 0;
   text-decoration: none;
   color: #fff;
   font: 10px/12px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
@@ -329,6 +330,7 @@ nav .company-logo {
 }
 
 .shopping-list {
+  min-width: 0;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ccc;
