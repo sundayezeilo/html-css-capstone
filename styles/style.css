@@ -32,6 +32,7 @@
 html {
   max-width: 100%;
   font-size: 62.5%;
+
   /* Only for convenient using of rem similar to px (1.6rem = 16px) */
 }
 
@@ -413,7 +414,6 @@ h5.cart-title a {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  /* number of lines to show */
   -webkit-box-orient: vertical;
   margin-top: 12px;
   color: #000;
