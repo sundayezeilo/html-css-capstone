@@ -527,6 +527,10 @@ footer {
   border-radius: 6px;
 }
 
+.footer-wrap input:focus {
+  outline: none;
+}
+
 .footer-wrap .lang-contry-currency {
   display: flex;
   flex-direction: column;
