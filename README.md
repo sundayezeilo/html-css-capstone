@@ -21,7 +21,7 @@ HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 ## Live Demo
 
-[Zeilotech Integrated Systems](https://raw.githack.com/ezeilo-su/html-css-capstone/search-result-page/index.html)
+[Zeilotech Electronics Online Store](https://raw.githack.com/ezeilo-su/html-css-capstone/add-header/index.html)
 
 ## Author
 
