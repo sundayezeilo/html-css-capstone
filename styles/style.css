@@ -463,6 +463,8 @@ footer {
 
 .footer-cat-title {
   color: #d35266;
+  font-size: 18px;
+  line-height: 22px;
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 2px solid #d35266;
@@ -470,8 +472,20 @@ footer {
 
 .footer-wrap label {
   color: #d35266;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-wrap label {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer-cat-title {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .footer-wrap form {
