@@ -398,8 +398,8 @@ h5.cart-title a {
 
 /* END OF MOBILE VERSION */
 
-@media only screen and (min-width: 768px) {
-  /* .shop-category {
+/* @media only screen and (min-width: 768px) {
+  .shop-category {
     grid-gap: 15px;
     grid-template-columns: repeat(4, auto);
   }
