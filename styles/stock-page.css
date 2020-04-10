@@ -71,7 +71,7 @@ h6 {
 /* NAV SECTION */
 
 header {
-  max-width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
   position: sticky;
   top: 0;
@@ -79,7 +79,7 @@ header {
 
 nav {
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   background-color: #383838;
@@ -184,7 +184,7 @@ nav .company-logo {
 /* DROPDOWN LIST WITH BOOTSTRAP */
 
 .lower-nav {
-  height: 120px;
+  height: 100px;
   max-width: 100%;
   background-color: #d35266;
   align-items: center;
@@ -233,160 +233,88 @@ nav .company-logo {
   line-height: 26px;
 }
 
-/* ADS SECTION */
+/* PRODUCT SECTION */
 
 .page {
-  max-width: 1310px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-bottom: 10px;
 }
 
-.ads-section {
-  display: none;
-  padding: 10px 0;
-  margin: 10px 20px 0 20px;
-  background-color: #fff;
-}
-
-.ads-wrap {
-  max-width: 95%;
+.search-results {
   display: flex;
-  align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
-  justify-content: space-between;
 }
 
-.ads-block {
-  max-width: 90%;
-  padding: 20px 5px 20px 20px;
-  background-color: #fff;
-}
-
-.ads-block:hover {
-  background-color: #eee;
-}
-
-.section-title {
-  font: 16px/18px "Gotham Bold", Helvetica, Arial, sans-serif;
-}
-
-.hot-ads {
+.column {
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #eee;
 }
 
-.hot-ads-body h3,
-.hot-ads-body h4,
-.hot-ads-body h5 {
-  margin-bottom: 8px;
+.search-filter {
+  max-width: 30%;
 }
 
-.ads-wrap > span {
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-  color: #d35266;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ddd;
-  cursor: pointer;
+.search-filter,
+.search-result-text {
+  flex-shrink: 0;
 }
 
-.hot-ads-body {
-  cursor: pointer;
-  margin: auto 5px auto 20px;
-  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+.filter-options {
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
-.hot-ads-body p {
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 4px;
-}
-
-.hot-ads-body h3 a {
-  color: #d35266;
-  font: 22px/24px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
-}
-
-.hot-ads-body h4 {
-  font: 20px/22px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
-}
-
-.hot-ads-price,
-.hot-ads-purchase {
-  display: table-cell;
-  font-size: 14px;
-  line-height: 26px;
-  height: 30px;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #d35266;
-  font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
-}
-
-.hot-ads-price {
-  width: auto;
-  padding: 6px 8px;
-  border-right: 1px solid #ddd;
-  border-radius: 4px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.hot-ads-purchase {
-  width: auto;
-  padding: 6px 8px;
-  border-left: 1px solid #ddd;
-  border-radius: 4px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .ads-section {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* PRODUCT SECTION */
 .shop-category {
-  display: grid;
-  grid-gap: 5px;
-  margin: 0 20px 0 20px;
-  padding: 15px 0 5px 0;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, auto);
-  border-top: 2px solid #ddd;
+  margin: 0 0 0 20px;
 }
 
 .shopping-list {
-  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
+  margin-top: 8px;
   background-color: #fff;
   border: 1px solid #ccc;
 }
 
-.shop-category-title {
+.shopping-list:nth-child(1),
+.shopping-list:nth-child(3),
+.shopping-list:nth-child(5),
+.shopping-list:nth-child(7) {
+  background-color: #eee;
+}
+
+.cart-body {
+  max-width: 65%;
+  margin-left: 20px;
+}
+
+.add-cart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-result-text {
   font-size: 16px;
   line-height: 18px;
   color: #383838;
   margin: 10px 20px 0 20px;
   padding-bottom: 6px;
-  text-decoration-color: #d35266;
   font-family: "Heveltica Neue Bold", Helvetica, Arial, sans-serif;
+}
+
+.shopping-list a {
+  display: block;
+  max-width: 50%;
+  flex-shrink: 0;
 }
 
 .stock-img {
   width: 100%;
   max-width: 100%;
-  object-fit: cover;
 }
 
 .fa-plus-square {
@@ -412,7 +340,7 @@ h5.cart-title a {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   margin-top: 12px;
   color: #000;
@@ -439,12 +367,7 @@ h5.cart-title a {
 /* END OF MOBILE VERSION */
 
 @media only screen and (min-width: 768px) {
-  .shop-category {
-    grid-gap: 15px;
-    grid-template-columns: repeat(4, auto);
-  }
-
-  .shop-category-title {
+  .search-result-text {
     font-size: 22px;
     line-height: 22px;
   }
@@ -456,7 +379,7 @@ h5.cart-title a {
 }
 
 footer {
-  max-width: 1310px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -464,7 +387,6 @@ footer {
 .legal-social,
 .footer-wrap {
   max-width: 100%;
-  margin: 0 20px;
   display: flex;
   align-items: flex-start;
   padding: 15px 30px 20px 0;
