@@ -261,7 +261,8 @@ nav .company-logo {
   flex-shrink: 0;
 }
 
-.filter-options {
+.filter-options,
+.shopping-list {
   flex-grow: 1;
   overflow-y: auto;
 }
@@ -272,8 +273,8 @@ nav .company-logo {
 
 .shopping-list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   margin-top: 8px;
   background-color: #fff;
@@ -306,15 +307,9 @@ nav .company-logo {
   font-family: "Heveltica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
-.shopping-list a {
-  display: block;
-  max-width: 50%;
-  flex-shrink: 0;
-}
-
 .stock-img {
   width: 100%;
-  max-width: 100%;
+  object-fit: cover;
 }
 
 .fa-plus-square {
