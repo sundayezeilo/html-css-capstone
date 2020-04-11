@@ -218,15 +218,6 @@ nav .company-logo {
   font: 16px/18px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
-.search-wrap {
-  display: flex;
-  align-items: center;
-}
-
-.search-icon {
-  margin-left: 10px;
-}
-
 .search-icon .btn-dark {
   color: #fff;
   font-size: 16px;
