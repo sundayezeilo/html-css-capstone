@@ -1,271 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeilotech Electronics Shop</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/stock-page.css">
-  </head>
-  <body>
-    <header class="container-fluid pl-0 pr-0">
-      <nav>
-        <div class="page-logo-wrap">
-          <img class="company-logo" src="images/company-logo-6.jpg" alt="Company Brand">
-        </div>
-        <ul class="nav-bar">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <i class="fa fa-home"></i>
-              <span>HOME</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span>COLLECTIONS</span>
-            </a>
-          </li>
-          <li class="nav-item cart">
-            <a class="nav-link" href="#">
-              <i class="material-icons">add_shopping_cart</i>
-              <span>PURCHASE LIST</span>
-            </a>
-          </li>
-          <li class="nav-item cart d-none d-md-block">
-            <a class="nav-link ads-link" href="#">SELL ON ZEILOTECH</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="lower-nav d-none d-md-flex">
-        <div class="header-logo">
-          <img src="images/company-logo-6.jpg" alt="Company Brand">
-        </div>                                        
-        <div class="dropdown">
-          <button type="button" class="btn btn-light dropdown-toggle border-secondary" data-toggle="dropdown">
-            All Categories
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Demo Boards</a>
-            <a class="dropdown-item" href="#">RF Modules</a>
-            <a class="dropdown-item" href="#">MCUs</a>
-            <a class="dropdown-item" href="#">Components</a>
-            <a class="dropdown-item" href="#">PCBs</a>
-          </div>
-        </div> 
-        <input type="text" placeholder="Manufacturer">
-        <div class="search-wrap">
-          <input type="text" placeholder="Ship from">        
-          <a class="search-icon" href="stock.html">
-            <button type="button" class="btn btn-dark">Search</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/stock-page.css">
+</head>
+
+<body>
+  <header class="container-fluid pl-0 pr-0 pb-0">
+    <nav>
+      <div class="page-logo-wrap">
+        <img class="company-logo" src="images/company-logo-6.jpg" alt="Company Brand">
+      </div>
+      <ul class="nav-bar">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-home"></i>
+            <span>HOME</span>
           </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span>COLLECTIONS</span>
+          </a>
+        </li>
+        <li class="nav-item cart">
+          <a class="nav-link" href="#">
+            <i class="material-icons">add_shopping_cart</i>
+            <span>PURCHASE LIST</span>
+          </a>
+        </li>
+        <li class="nav-item cart d-none d-md-block">
+          <a class="nav-link ads-link" href="#">SELL ON ZEILOTECH</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="lower-nav d-none d-md-flex">
+      <div class="header-logo">
+        <img src="images/company-logo-6.jpg" alt="Company Brand">
+      </div>
+      <div class="dropdown">
+        <button type="button" class="btn btn-light dropdown-toggle border-secondary" data-toggle="dropdown">
+          All Categories
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Demo Boards</a>
+          <a class="dropdown-item" href="#">RF Modules</a>
+          <a class="dropdown-item" href="#">MCUs</a>
+          <a class="dropdown-item" href="#">Components</a>
+          <a class="dropdown-item" href="#">PCBs</a>
         </div>
       </div>
-    </header>
-    <main class="container page">
-      <div class="row search-results">
-        <aside class="col-12 col-md-3 search-filter">
-          <div class="row">
-            <div class="col-6 col-md-12 top-filter">
-              <input type="checkbox">
-              <label>Available</label>
-              <input type="checkbox">
-              <label>Order</label>
-            </div>
-            <div class="col-6 col-md-12 manufacturer">
-              <h4 class="filter-options">Manufacturer</h4>
-              <ul class="manufacturers-list">
-                <li><input type="checkbox"></li>
-                <li><input type="checkbox"></li>
-                <li><input type="checkbox"></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-12 shipping">
-              <h4 class="filter-options">Shipping Option</h4>
-              <ul class="shipping-options">
-                <li><input type="checkbox"></li>
-                <li><input type="checkbox"></li>
-                <li><input type="checkbox"></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-12 price-range">
-              <h4 class="filter-options">Price Range</h4>
-              <ul class="price">
-                <li><input type="checkbox"></li>
-                <li><input type="checkbox"></li>
-                <li><input type="checkbox"></li>
-              </ul>
-            </div>
-          </div>
-        </aside>
-        <section class="col-12 col-md-9 demo-board-store">
-          <h3 class="row search-result-text">86 Results for "Raspberry Pi 4" Search in Category <span>Demo Boards</span></h3>
-          <div class="col-12 demo-boards shop-category">
-            <article class="row shopping-list mt-0">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/HTB1vRvUOpXXXXcvaXXXq6xXFXXXH/Orange-Pi-PC-linux-and-android-mini-PC-Beyond-Raspberry-Pi-2.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">Mini PC Orange Pi Android Linux The H3 1GB 1GB-SUPPORT Lubuntu Is-Available Wholesale</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">15$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/Hb6b60f4377b54b69b9ba6f79b1887b08t/Orange-Pi-Zero-LTS-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">Development-Board Orange Pi Raspberry Pi Open-Source Quad-Core Zero LTS Beyond H2 512MB</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">10.49$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/HTB1lcyWfIUrBKNjSZPxq6x00pXah/Orange-Pi-2G-IOT-ARM-Cortex-A5-32bit-Support-ubuntu-linux-and-android-mini-PC-Beyond.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">Mini PC Bluetooth-Support Orange Pi Raspberry Pi Android Cortex-A5 Linux 2G-IOT ARM 32bit</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">9.90$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/Hf77cf15f6dea4aac92b9120a464ad52ad/1PCS-Wireless-module-CH340-NodeMcu-V3-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">Things-Development-Board Pcb-Antenna WIFI Internet Nodemcu V3 Esp8266-Esp-12e Wireless-Module</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">2.20$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/H1b4d30026a8d4d83b668a339ba549e8b9/V3-Wireless-module-NodeMcu-4M-bytes-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266-ESP.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">V3 Wireless module NodeMcu 4M bytes Lua WIFI Internet of Things development board based</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">2.83$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/HTB1IqraLXXXXXa.XFXXq6xXFXXXE/Free-shipping-free-shipping-BeagleBone-AM3359-development-network-architecture-A8-China-BB-Black-card-LINUX.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">Free shipping BeagleBone Black TI AM335x Cortex-A8 development BB-Black Rev.C</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">54.39$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/HTB1Q_Hsv7yWBuNjy0Fpq6yssXXao/UNO-R3-developent-board-MEGA328P-CH340-CH340G-For-Arduino-UNO-R3-Without-USB-Cable.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span class="add-cart"><i class="fa fa-plus-square"></i></span>
-                <h5 class="cart-title"><a href="#">Beaglebone Black Rev C 512MB 1GHz ARM Cortex-A8 Development Kit Expansion Board Cape for Various Components and Functions</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">18.19$</span>
-                </div>
-              </div>
-            </article>
-            <article class="row shopping-list">
-              <a href="#"><img class="stock-img" src="https://ae01.alicdn.com/kf/HTB1QWVcsh1YBuNjy1zcq6zNcXXaY/NUCLEO-F767ZI-ARM-STM32-Nucleo-144-development-board-with-STM32F767ZI-MCU-NUCLEO-F767ZI.jpg_220x220xz.jpg_.webp" alt="RasPi4"></a>        
-              <div class="cart-body">
-                <span><i class="fa fa-plus-square fa-2x"></i></span>
-                <h5 class="cart-title"><a href="#">UNO R3 Development Board ATmega328P CH340 CH340G For Arduino UNO R3 With Straight Pin Header</a></h5>
-                <h6 class="item-condition"><strong>New</strong></h6>
-                <p>Shipped from Lagos, Nigeria</p>
-                <div class="cart-checkout">
-                  <span class="ads-date">10 Apr, 2020</span>
-                  <span class="stock-price">4.27$</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
+      <input type="text" placeholder="Manufacturer">
+      <div class="search-wrap">
+        <input type="text" placeholder="Ship from">
+        <a class="search-icon" href="stock.html">
+          <span class="btn btn-dark">Search</span>
+        </a>
       </div>
-    </main>
-    <footer>
-      <div class="footer-wrap">
-        <div class="footer-left-content">
-          <img src="images/company-logo-6.jpg" alt="Company Brand">
-          <h5>Zeilotech Integrated Systems provides the best solutions for embedded systems kits and accessories.</h5>
-        </div>
-        <div class="footer-content">
-          <h4 class="footer-cat-title">CATEGORIES</h4>
-          <ul class="footer-menu">
-            <li class="footer-item"><a class="footer-link" href="#">Demo Boards</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">RF Modules</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">MCUs</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Components</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">PCB</a></li>
+    </div>
+  </header>
+  <main class="container page">
+    <div class="row search-results">
+      <aside class="col-12 col-md-3 search-filter">
+        <div class="row">
+          <ul class="col-6 col-md-12 d-flex top-filter mb-4">
+            <li class="form-check">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label ml-2">Available</label>
+            </li>
+            <li class="form-check ml-3">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label ml-2">Order</label>
+            </li>
           </ul>
+          <div class="col-6 col-md-12 manufacturer mb-4">
+            <h4 class="filter-options">Manufacturer</h4>
+            <ul>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">Texas Instrument</label>
+              </li>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">ST Microelectronics</label>
+              </li>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">Dallas Semiconductor</label>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-12 shipping mb-4">
+            <h4 class="filter-options">Shipping Option</h4>
+            <ul>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">Post Air</label>
+              </li>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">DHL</label>
+              </li>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">EMS</label>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-12 price-range">
+            <h4 class="filter-options">Price Range</h4>
+            <ul>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">10$ - 50$</label>
+              </li>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">50$ - 120$</label>
+              </li>
+              <li>
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label ml-2">120$ - 250$</label>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-content">
-          <h4 class="footer-cat-title">NAVIGATION</h4>
-          <ul class="footer-menu">
-            <li class="footer-item"><a class="footer-link" href="#">Home</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Sign In</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Sign Up</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">FAQ</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Help</a></li>
-          </ul>
+      </aside>
+      <section class="col-12 col-md-9 demo-board-store">
+        <h3 class="ghost-title">Ghost Heading</h3>
+        <div class="col-12 demo-boards shop-category">
+          <h4 class="col-12 search-result-text">86 Results for "Raspberry Pi 4" Search in Category <span>Demo
+              Boards</span></h4>
+          <article class="row shopping-list mt-0">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/HTB1vRvUOpXXXXcvaXXXq6xXFXXXH/Orange-Pi-PC-linux-and-android-mini-PC-Beyond-Raspberry-Pi-2.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">Mini PC Orange Pi Android Linux The H3 1GB 1GB-SUPPORT Lubuntu
+                  Is-Available Wholesale</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">15$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/Hb6b60f4377b54b69b9ba6f79b1887b08t/Orange-Pi-Zero-LTS-H2-Quad-Core-Open-source-512MB-development-board-beyond-Raspberry-Pi.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">Development-Board Orange Pi Raspberry Pi Open-Source Quad-Core Zero LTS
+                  Beyond H2 512MB</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">10.49$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/HTB1lcyWfIUrBKNjSZPxq6x00pXah/Orange-Pi-2G-IOT-ARM-Cortex-A5-32bit-Support-ubuntu-linux-and-android-mini-PC-Beyond.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">Mini PC Bluetooth-Support Orange Pi Raspberry Pi Android Cortex-A5
+                  Linux 2G-IOT ARM 32bit</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">9.90$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/Hf77cf15f6dea4aac92b9120a464ad52ad/1PCS-Wireless-module-CH340-NodeMcu-V3-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">Things-Development-Board Pcb-Antenna WIFI Internet Nodemcu V3
+                  Esp8266-Esp-12e Wireless-Module</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">2.20$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/H1b4d30026a8d4d83b668a339ba549e8b9/V3-Wireless-module-NodeMcu-4M-bytes-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266-ESP.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">V3 Wireless module NodeMcu 4M bytes Lua WIFI Internet of Things
+                  development board based</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">2.83$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/HTB1IqraLXXXXXa.XFXXq6xXFXXXE/Free-shipping-free-shipping-BeagleBone-AM3359-development-network-architecture-A8-China-BB-Black-card-LINUX.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">Free shipping BeagleBone Black TI AM335x Cortex-A8 development BB-Black
+                  Rev.C</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">54.39$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/HTB1Q_Hsv7yWBuNjy0Fpq6yssXXao/UNO-R3-developent-board-MEGA328P-CH340-CH340G-For-Arduino-UNO-R3-Without-USB-Cable.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span class="add-cart"><i class="fa fa-plus-square"></i></span>
+              <h5 class="cart-title"><a href="#">Beaglebone Black Rev C 512MB 1GHz ARM Cortex-A8 Development Kit
+                  Expansion Board Cape for Various Components and Functions</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">18.19$</span>
+              </div>
+            </div>
+          </article>
+          <article class="row shopping-list">
+            <a href="#"><img class="stock-img"
+                src="https://ae01.alicdn.com/kf/HTB1QWVcsh1YBuNjy1zcq6zNcXXaY/NUCLEO-F767ZI-ARM-STM32-Nucleo-144-development-board-with-STM32F767ZI-MCU-NUCLEO-F767ZI.jpg_220x220xz.jpg_.webp"
+                alt="RasPi4"></a>
+            <div class="cart-body">
+              <span><i class="fa fa-plus-square fa-2x"></i></span>
+              <h5 class="cart-title"><a href="#">UNO R3 Development Board ATmega328P CH340 CH340G For Arduino UNO R3
+                  With Straight Pin Header</a></h5>
+              <h6 class="item-condition"><strong>New</strong></h6>
+              <p>Shipped from Lagos, Nigeria</p>
+              <div class="cart-checkout">
+                <span class="ads-date">10 Apr, 2020</span>
+                <span class="stock-price">4.27$</span>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="lang-contry-currency">
-          <form>
-            <label for="country">COUNTRY</label> 
-            <input id="country" type="text" placeholder="Nigeria"/>
-          </form>
-          <form>
-            <label for="language">LANGUAGE</label> 
-            <input id="language" type="text" placeholder="English"/>
-          </form>
-          <form>
-            <label for="currency">CURRENCY</label> 
-            <input id="currency" type="text" placeholder="&#8358;NGN"/>
-          </form>
-        </div>
+      </section>
+      <div class="next-buttons">
+        <button type="button" class="btn btn-outline-light">1</button>
+        <button type="button" class="btn btn-outline-light">2</button>
+        <button type="button" class="btn btn-outline-light">3</button>
+        <button type="button" class="btn btn-outline-light">4</button>
+        <span class="elipses">...</span>
+        <button type="button" class="btn btn-outline-light">5</button>
       </div>
-      <div class="legal-social">
-        <centp class="legal-text">Copyright &copy;2020 <a href="#">Zeilotech.com</a>. All Rights Reserved. Designed by Sunday U. Ezeilo.</centp>
-        <ul class="social-bar">
-          <li class="social-link"><i class="fa fa-yahoo"></i></li>
-          <li class="social-link"><i class="fa fa-google-plus"></i></li>
-          <li class="social-link"><i class="fa fa-linkedin"></i></li>
-          <li class="social-link"><i class="fa fa-twitter"></i></li>
-          <li class="social-link"><i class="fa fa-facebook"></i></li>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-left-content">
+        <img src="images/company-logo-6.jpg" alt="Company Brand">
+        <h5>Zeilotech Integrated Systems provides the best solutions for embedded systems kits and accessories.</h5>
+      </div>
+      <div class="footer-content">
+        <h4 class="footer-cat-title">CATEGORIES</h4>
+        <ul class="footer-menu">
+          <li class="footer-item"><a class="footer-link" href="#">Demo Boards</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">RF Modules</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">MCUs</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">Components</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">PCB</a></li>
         </ul>
       </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+      <div class="footer-content">
+        <h4 class="footer-cat-title">NAVIGATION</h4>
+        <ul class="footer-menu">
+          <li class="footer-item"><a class="footer-link" href="#">Home</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">Sign In</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">Sign Up</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">FAQ</a></li>
+          <li class="footer-item"><a class="footer-link" href="#">Help</a></li>
+        </ul>
+      </div>
+      <div class="lang-contry-currency">
+        <form>
+          <label for="country">COUNTRY</label>
+          <input id="country" type="text" placeholder="Nigeria" />
+        </form>
+        <form>
+          <label for="language">LANGUAGE</label>
+          <input id="language" type="text" placeholder="English" />
+        </form>
+        <form>
+          <label for="currency">CURRENCY</label>
+          <input id="currency" type="text" placeholder="&#8358;NGN" />
+        </form>
+      </div>
+    </div>
+    <div class="legal-social">
+      <p class="legal-text">Copyright &copy;2020 <a href="#">Zeilotech.com</a>. All Rights Reserved. Designed by
+        Sunday U. Ezeilo.</p>
+      <ul class="social-bar">
+        <li class="social-link"><i class="fa fa-yahoo"></i></li>
+        <li class="social-link"><i class="fa fa-google-plus"></i></li>
+        <li class="social-link"><i class="fa fa-linkedin"></i></li>
+        <li class="social-link"><i class="fa fa-twitter"></i></li>
+        <li class="social-link"><i class="fa fa-facebook"></i></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

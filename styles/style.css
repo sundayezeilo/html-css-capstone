@@ -41,7 +41,7 @@ body {
   min-width: 320px !important;
   overflow-x: hidden;
   background-color: #fff;
-  font: 12px/16px "Helvetica Neue light", Helvetica, Arial, sans-serif;
+  font: 12px/16px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -194,7 +194,7 @@ nav .company-logo {
 .btn-light {
   height: 40px;
   border-radius: 6px;
-  font: 18px/22px "Helvetica Neue light", Helvetica, Arial, sans-serif;
+  font: 18px/22px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .header-logo img {
@@ -204,7 +204,7 @@ nav .company-logo {
 }
 
 .dropdown-item {
-  font: 16px/18px "Helvetica Neue light", Helvetica, Arial, sans-serif;
+  font: 16px/18px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .dropdown-item:hover {
@@ -215,7 +215,7 @@ nav .company-logo {
   height: 40px;
   padding-left: 4px;
   border-radius: 6px;
-  font: 16px/18px "Helvetica Neue light", Helvetica, Arial, sans-serif;
+  font: 16px/18px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .search-wrap {
@@ -230,9 +230,13 @@ nav .company-logo {
 .search-icon .btn-dark {
   color: #fff;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   height: 38px;
   width: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #383838;
 }
 
 /* ADS SECTION */
