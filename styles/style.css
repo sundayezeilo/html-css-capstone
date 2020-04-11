@@ -234,6 +234,7 @@ nav .company-logo {
 /* ADS SECTION */
 
 .page {
+  z-index: 0;
   max-width: 1310px;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -357,7 +358,9 @@ nav .company-logo {
 /* PRODUCT SECTION */
 
 .store-section {
-  padding: 80px;
+  z-index: 0;
+  padding: 40px;
+  padding-top: 10px;
   background-color: #eee;
   border-bottom: 1px solid #ccc;
 }
@@ -371,26 +374,34 @@ nav .company-logo {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, 1fr);
-  overflow-x: auto;
-  position: relative;
-  z-index: 0;
+  overflow: auto hidden;
 }
 
-.store-section .scroll-wrap {
+/* .rf-modules, */
+.demo-boards {
+  position: relative;
+}
+
+.store-section .right-scroll-wrap,
+.store-section .left-scroll-wrap {
   display: flex;
   align-items: center;
-  max-width: 20px;
+  max-width: 30px;
   background-color: transparent;
   justify-content: center;
   position: absolute;
   height: 50%;
   margin-top: 17px;
-  z-index: 1;
   margin-left: 21px;
-  border-top: 1px solid #ccc;
+  z-index: 1;
 }
 
-.store-section .scroll-wrap:hover {
+.store-section .right-scroll-wrap {
+  right: 0;
+}
+
+.store-section .right-scroll-wrap:hover,
+.store-section .left-scroll-wrap:hover {
   background-color: #eee;
 }
 
@@ -474,6 +485,11 @@ h5.cart-title a {
 /* END OF MOBILE VERSION */
 
 @media only screen and (min-width: 768px) {
+  .store-section {
+    padding: 80px;
+    padding-top: 10px;
+  }
+
   .shop-category {
     grid-gap: 15px;
   }
