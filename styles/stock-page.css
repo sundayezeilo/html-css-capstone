@@ -408,6 +408,7 @@ h5.cart-title a {
   width: 30px;
   height: 30px;
   background-color: #fff;
+  border: 1px solid #ccc;
   font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
 }
 

@@ -375,11 +375,7 @@ nav .company-logo {
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, 1fr);
   overflow: auto hidden;
-}
-
-/* .rf-modules, */
-.demo-boards {
-  position: relative;
+  position: relative !important;
 }
 
 .store-section .right-scroll-wrap,
@@ -391,18 +387,16 @@ nav .company-logo {
   justify-content: center;
   position: absolute;
   height: 50%;
-  margin-top: 17px;
-  margin-left: 21px;
+  margin-top: 20px;
   z-index: 1;
 }
 
-.store-section .right-scroll-wrap {
-  right: 0;
+.store-section .left-scroll-wrap {
+  left: 5px;
 }
 
-.store-section .right-scroll-wrap:hover,
-.store-section .left-scroll-wrap:hover {
-  background-color: #eee;
+.store-section .right-scroll-wrap {
+  right: 10px;
 }
 
 .store-section .fa-angle-left,
