@@ -182,17 +182,19 @@ nav .company-logo {
   }
 }
 
-/* DROPDOWN LIST WITH BOOTSTRAP */
+/* HEADER WITH BOOTSTRAP */
 
 .lower-nav {
   height: 120px;
   max-width: 100%;
   background-color: #d35266;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .btn-light {
+  display: inline-block;
   height: 40px;
   border-radius: 6px;
   font: 18px/22px "Helvetica Neue Light", Helvetica, Arial, sans-serif;
@@ -229,6 +231,42 @@ nav .company-logo {
   align-items: center;
   justify-content: center;
   background-color: #383838;
+}
+
+@media only screen and (max-width: 767px) {
+  .lower-nav {
+    height: 160px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-content {
+    flex: 15%;
+    margin-right: 12px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .lower-nav input,
+  .dropdown-toggle,
+  .search-icon .btn-dark {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .header-logo img {
+    max-width: 50px;
+  }
+
+  .dropdown-item {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 /* ADS SECTION */
