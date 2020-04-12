@@ -216,6 +216,10 @@ nav .company-logo {
 }
 
 .lower-nav input {
+  position: relative;
+  min-width: 40px;
+  max-width: 180px;
+  flex: 1 1 auto !important;
   height: 40px;
   padding-left: 4px;
   border-radius: 6px;
