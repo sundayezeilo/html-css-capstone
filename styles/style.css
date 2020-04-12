@@ -280,18 +280,17 @@ nav .company-logo {
 }
 
 .ads-section {
-  display: none;
+  display: flex;
+  justify-content: center;
   padding: 10px 0;
   margin: 10px 20px 0 20px;
   background-color: #fff;
 }
 
 .ads-wrap {
-  max-width: 95%;
+  max-width: 100%;
   display: flex;
   align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
   justify-content: space-between;
 }
 
@@ -313,6 +312,19 @@ nav .company-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .ads-wrap {
+    max-width: 95%;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .hot-ads {
+    flex-direction: row;
+  }
 }
 
 .hot-ads-body h3,
@@ -342,18 +354,33 @@ nav .company-logo {
 }
 
 .hot-ads-body p {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 12px;
   margin-bottom: 4px;
 }
 
 .hot-ads-body h3 a {
   color: #d35266;
-  font: 22px/24px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+  font: 16px/16px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 }
 
 .hot-ads-body h4 {
-  font: 20px/22px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+  font: 14px/14px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .hot-ads-body p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .hot-ads-body h3 a {
+    font: 22px/24px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+  }
+
+  .hot-ads-body h4 {
+    font: 20px/22px "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+  }
 }
 
 .hot-ads-price,
@@ -385,13 +412,6 @@ nav .company-logo {
   border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .ads-section {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 /* PRODUCT SECTION */
@@ -453,13 +473,17 @@ nav .company-logo {
 }
 
 .shop-category-title {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 14px;
   color: #383838;
   margin: 10px 20px 0 20px;
   padding-bottom: 6px;
   text-decoration-color: #d35266;
-  font-family: "Heveltica Neue Bold", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+
+.shop-category-title span {
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 .stock-img {
@@ -486,8 +510,8 @@ nav .company-logo {
 }
 
 h5.cart-title a {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -520,21 +544,22 @@ h5.cart-title a {
 @media only screen and (min-width: 768px) {
   .store-section {
     padding: 80px;
-    padding-top: 10px;
+    padding-top: 40px;
   }
 
   .shop-category {
     grid-gap: 15px;
+    margin-bottom: 20px;
   }
 
   .shop-category-title {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   h5.cart-title a {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 

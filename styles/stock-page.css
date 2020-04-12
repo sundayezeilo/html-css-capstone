@@ -392,7 +392,7 @@ nav .company-logo {
 
 h5.cart-title a {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -465,8 +465,8 @@ h5.cart-title a {
   }
 
   h5.cart-title a {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
