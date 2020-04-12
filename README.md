@@ -1,6 +1,4 @@
-# html-css-capstone
-
-HTML &amp; CSS Capstone Project: Online Shop For Electronics
+## HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 > This is my HTML & CSS Capstone Project. I created an online shop for electronics. I completed the project using HTML5 and the basic CSS3 layouts which include flexbox and grid. The project features two breakpoints; Mobile and Tablet/Desktop versions. It is fully responsive as requirement specifications.
 
