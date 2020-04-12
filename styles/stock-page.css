@@ -516,6 +516,7 @@ footer {
   align-items: center;
   padding-top: 10px;
   padding-left: 10px;
+  flex: 1 1 auto;
 }
 
 .footer-content {
