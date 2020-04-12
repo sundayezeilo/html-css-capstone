@@ -236,7 +236,7 @@ nav .company-logo {
 
 @media only screen and (max-width: 767px) {
   .lower-nav {
-    height: 160px;
+    /* height: 140px; */
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
