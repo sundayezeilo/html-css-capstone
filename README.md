@@ -6,6 +6,7 @@ HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 ## Project Screenshots here:
 
+![screenshot](screenshots/page-1.png)
 ![screenshot](screenshots/page-2.png)
 ![screenshot](screenshots/page-5.png)
 ![screenshot](screenshots/page-6.png)
