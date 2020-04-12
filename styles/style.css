@@ -568,7 +568,7 @@ h5.cart-title a {
 footer {
   max-width: 1310px;
   margin: 0 auto;
-  padding: 0 30px 20px 20px;
+  padding-bottom: 20px;
 }
 
 .legal-social,
@@ -580,7 +580,6 @@ footer {
   background-color: #fff;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 30px;
 }
 
 .footer-item {
@@ -606,6 +605,7 @@ footer {
 
 .footer-content {
   padding-top: 10px;
+  padding-left: 10px;
   flex: 1 1 auto;
 }
 
@@ -636,13 +636,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  footer {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
   .footer-wrap {
     flex-wrap: nowrap;
+    padding-top: 30px;
   }
 
   .footer-left-content {
@@ -664,7 +660,7 @@ footer {
   justify-content: space-between;
 }
 
-.footer-wrap input {
+footer .footer-wrap input {
   margin-left: 8px;
   font-size: 12px;
   padding-left: 3px;
@@ -681,8 +677,9 @@ footer {
   justify-content: center;
 }
 
-.legal-text {
-  padding: 10px 0;
+.legal-text,
+.social-bar {
+  padding: 10px 20px;
 }
 
 .legal-social .legal-text a {
@@ -693,14 +690,12 @@ footer {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  border-top: 1px solid #ddd;
 }
 
 .social-bar {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 10px 20px;
 }
 
 .social-link {
