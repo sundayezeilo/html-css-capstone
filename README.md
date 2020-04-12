@@ -2,13 +2,19 @@
 
 HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
-> This is my HTML & CSS Capstone Project. I created an online shop for electronics. I managed to submit the project some seconds to the deadline, though I'm yet to fix a few bugs.
+> This is my HTML & CSS Capstone Project. I created an online shop for electronics. I completed the project using HTML5 and the basic CSS3 layouts which include flexbox and grid. The project features two breakpoints; Mobile and Tablet/Desktop versions. It is fully responsive as requirement specifications.
 
-![screenshot](images/homepage.jpg)
-![screenshot](images/search-result-page.jpg)
+## Project Screenshots here:
+
+![screenshot](screenshots/page-2.png)
+![screenshot](screenshots/page-5.png)
+![screenshot](screenshots/page-6.png)
+![screenshot](screenshots/page-9.png)
 
 ## Features
 
+- Mobile Version
+- Desktop Version
 - Product Page
 - Search Result Page
 
@@ -16,8 +22,12 @@ HTML &amp; CSS Capstone Project: Online Shop For Electronics
 
 - HTML5
 - CSS3
-- Flex Box
 - Bootstrap 4.4.1
+
+## Layouts
+
+- Flexbox
+- CSS Grid Layout
 
 ## Live Demo
 
@@ -39,4 +49,4 @@ Feel free to check the [issues page](https://github.com/ezeilo-su/html-css-capst
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Show support by giving a ⭐️ if you like this project!
