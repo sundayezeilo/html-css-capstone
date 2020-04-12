@@ -74,7 +74,7 @@ h6 {
 header {
   max-width: 100%;
   margin: 0 auto;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
@@ -273,6 +273,32 @@ nav .company-logo {
   }
 }
 
+/* STORE HEADING */
+
+.store-heading {
+  z-index: 10;
+  top: 186px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  columns: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font: 14px/16px "Gotham Bold", Helvetica, Arial, sans-serif;
+  background-color: #d35266;
+}
+
+@media only screen and (min-width: 768px) {
+  .store-heading {
+    height: 50px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
 /* ADS SECTION */
 
 .page {
@@ -280,6 +306,13 @@ nav .company-logo {
   max-width: 1310px;
   margin: 0 auto;
   padding-bottom: 10px;
+  padding-top: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .page {
+    padding-top: 250px;
+  }
 }
 
 .ads-section {
