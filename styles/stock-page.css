@@ -415,12 +415,12 @@ h5.cart-title a {
 }
 
 .stock-price {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   color: #fff;
   text-align: center;
   background-color: #d35266;
-  width: 80px;
+  width: 50px;
   padding: 8px 8px 4px 8px;
   border: 1px solid #888;
   border-radius: 4px;
@@ -467,6 +467,12 @@ h5.cart-title a {
   h5.cart-title a {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .stock-price {
+    font-size: 18px;
+    line-height: 24px;
+    width: 80px;
   }
 }
 
