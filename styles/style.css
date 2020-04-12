@@ -548,7 +548,7 @@ h5.cart-title a {
   }
 
   .shop-category {
-    grid-gap: 15px;
+    gap: 15px;
     margin-bottom: 20px;
   }
 
