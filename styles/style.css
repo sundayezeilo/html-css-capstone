@@ -546,8 +546,7 @@ h5.cart-title a {
 
 @media only screen and (min-width: 768px) {
   .store-section {
-    padding: 80px;
-    padding-top: 40px;
+    padding: 40px 80px;
   }
 
   .shop-category {
@@ -638,6 +637,11 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   .footer-wrap {
     flex-wrap: nowrap;
   }
