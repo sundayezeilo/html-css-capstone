@@ -72,7 +72,7 @@ h6 {
 /* NAV SECTION */
 
 header {
-  max-width: 1024px;
+  max-width: 100%;
   margin: 0 auto;
   position: sticky;
   top: 0;
@@ -276,9 +276,8 @@ nav .company-logo {
 
 /* PRODUCT SECTION */
 
-.container,
-.container-fluid {
-  max-width: 1024px;
+.container {
+  max-width: 1310px;
   padding-bottom: 10px;
   background-color: #eee;
 }
@@ -481,7 +480,7 @@ h5.cart-title a {
 }
 
 footer {
-  max-width: 1024px;
+  max-width: 1310px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -491,7 +490,7 @@ footer {
   max-width: 100%;
   display: flex;
   align-items: flex-start;
-  padding: 15px 30px 20px 0;
+  padding-bottom: 20px;
   background-color: #fff;
   justify-content: space-between;
   border-top: 1px solid #ddd;
@@ -554,6 +553,7 @@ footer {
 @media only screen and (min-width: 768px) {
   .footer-wrap {
     flex-wrap: nowrap;
+    padding-top: 30px;
   }
 
   .footer-left-content {
