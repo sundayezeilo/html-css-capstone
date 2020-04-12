@@ -33,7 +33,7 @@
 
 ## Live Demo
 
-[Zeilotech Electronics Online Store](https://raw.githack.com/ezeilo-su/html-css-capstone/add-header/index.html)
+[Zeilotech Electronics Online Store](https://raw.githack.com/ezeilo-su/html-css-capstone/dev/index.html)
 
 ## Author
 
